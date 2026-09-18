@@ -1,0 +1,94 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OECD Health Visualisation</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <header>
+            <h1>OECD Health Visualisation</h1>
+            <p>Mortality and health outcomes across OECD countries</p>
+        </header>
+
+        <main class="visualisation-layout">
+
+            <section class="chart-section">
+                <div id="chart"></div>
+
+                <div class="slider-container">
+                    <input
+                        id="year-slider"
+                        type="range"
+                        min="2015"
+                        max="2024"
+                        value="2024"
+                        step="1"
+                    >
+
+                    <span id="year-value">2024</span>
+                </div>
+            </section>
+
+
+            <aside class="controls">
+
+                <div class="control">
+                    <label for="country-select">Country</label>
+
+                    <select id="country-select">
+                        <option>Australia</option>
+                        <option>Japan</option>
+                        <option>United Kingdom</option>
+                    </select>
+                </div>
+
+
+                <div class="control">
+                    <label for="indicator-select">Indicator</label>
+
+                    <select id="indicator-select">
+                        <option>Mortality</option>
+                        <option>Life expectancy</option>
+                    </select>
+                </div>
+
+
+                <div class="control">
+                    <label for="comparison-select">Compare with</label>
+
+                    <select id="comparison-select">
+                        <option>OECD average</option>
+                    </select>
+                </div>
+
+            </aside>
+
+        </main>
+
+
+        <footer>
+            <div class="attribution">
+                Data source: OECD Health Statistics, 2015–2024
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script type="module" src="./main.js"></script>
+
+</body>
+</html>
