@@ -1,0 +1,207 @@
+================================================================================
+CSV BASIC ANALYSIS: 
+================================================================================
+
+Number of columns: 8
+Number of rows: 1524
+
+================================================================================
+COLUMNS IN ORDER
+================================================================================
+1 - country
+2 - year
+3 - sex
+4 - measure
+5 - category
+6 - method
+7 - unit
+8 - value
+
+================================================================================
+COLUMN ANALYSIS
+================================================================================
+
+--------------------------------------------------------------------------------
+Column 1 - country
+--------------------------------------------------------------------------------
+Different non-missing inputs: 51
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - 'Australia' : 30
+  2 - 'Austria' : 30
+  3 - 'Belgium' : 30
+  4 - 'Canada' : 30
+  5 - 'Chile' : 30
+  6 - 'Colombia' : 30
+  7 - 'Costa Rica' : 30
+  8 - 'Czechia' : 30
+  9 - 'Denmark' : 30
+  10 - 'Estonia' : 30
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 2 - year
+--------------------------------------------------------------------------------
+Different non-missing inputs: 10
+Missing rows: 0
+Most appropriate datatype: Integer
+
+Detected datatype counts:
+  Integer: 1524
+  Float: 0
+  Boolean: 0
+  Text: 0
+
+10 most common non-missing inputs:
+  1 - '2023' : 153
+  2 - '2022' : 153
+  3 - '2019' : 153
+  4 - '2018' : 153
+  5 - '2017' : 153
+  6 - '2016' : 153
+  7 - '2015' : 153
+  8 - '2021' : 153
+  9 - '2020' : 153
+  10 - '2024' : 147
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 3 - sex
+--------------------------------------------------------------------------------
+Different non-missing inputs: 3
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - 'Male' : 508
+  2 - 'Female' : 508
+  3 - 'Total' : 508
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 4 - measure
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - 'Life expectancy' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 5 - category
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - 'Total' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 6 - method
+--------------------------------------------------------------------------------
+Different non-missing inputs: 0
+Missing rows: 1524
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 0
+
+10 most common non-missing inputs:
+  No non-missing values
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 7 - unit
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - 'Years' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 8 - value
+--------------------------------------------------------------------------------
+Different non-missing inputs: 221
+Missing rows: 0
+Most appropriate datatype: Float
+
+Detected datatype counts:
+  Integer: 157
+  Float: 1367
+  Boolean: 0
+  Text: 0
+
+10 most common non-missing inputs:
+  1 - '81.1' : 24
+  2 - '81.4' : 24
+  3 - '81' : 22
+  4 - '80.9' : 21
+  5 - '81.6' : 21
+  6 - '79' : 20
+  7 - '80.6' : 19
+  8 - '81.3' : 18
+  9 - '83' : 18
+  10 - '82.4' : 18
+
+Values that do not fit the chosen datatype:
+  None
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================

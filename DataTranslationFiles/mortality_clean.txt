@@ -1,0 +1,217 @@
+================================================================================
+CSV BASIC ANALYSIS: 
+================================================================================
+
+Number of columns: 8
+Number of rows: 41288
+
+================================================================================
+COLUMNS IN ORDER
+================================================================================
+1 - country
+2 - year
+3 - sex
+4 - measure
+5 - category
+6 - method
+7 - unit
+8 - value
+
+================================================================================
+COLUMN ANALYSIS
+================================================================================
+
+--------------------------------------------------------------------------------
+Column 1 - country
+--------------------------------------------------------------------------------
+Different non-missing inputs: 46
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 41288
+
+10 most common non-missing inputs:
+  1 - 'Canada' : 1010
+  2 - 'Finland' : 1010
+  3 - 'Hungary' : 1010
+  4 - 'Sweden' : 1010
+  5 - 'United Kingdom' : 1010
+  6 - 'Australia' : 1010
+  7 - 'Austria' : 1010
+  8 - 'Czechia' : 1010
+  9 - 'Netherlands' : 1010
+  10 - 'Spain' : 1010
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 2 - year
+--------------------------------------------------------------------------------
+Different non-missing inputs: 10
+Missing rows: 0
+Most appropriate datatype: Integer
+
+Detected datatype counts:
+  Integer: 41288
+  Float: 0
+  Boolean: 0
+  Text: 0
+
+10 most common non-missing inputs:
+  1 - '2020' : 4518
+  2 - '2016' : 4498
+  3 - '2017' : 4456
+  4 - '2018' : 4448
+  5 - '2019' : 4446
+  6 - '2015' : 4382
+  7 - '2022' : 4316
+  8 - '2021' : 4312
+  9 - '2023' : 4052
+  10 - '2024' : 1860
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 3 - sex
+--------------------------------------------------------------------------------
+Different non-missing inputs: 3
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 41288
+
+10 most common non-missing inputs:
+  1 - 'Female' : 14236
+  2 - 'Total' : 13532
+  3 - 'Male' : 13520
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 4 - measure
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 41288
+
+10 most common non-missing inputs:
+  1 - 'Mortality' : 41288
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 5 - category
+--------------------------------------------------------------------------------
+Different non-missing inputs: 18
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 41288
+
+10 most common non-missing inputs:
+  1 - 'Certain infectious and parasitic diseases' : 2502
+  2 - 'Diseases of the genitourinary system' : 2502
+  3 - 'Diseases of the circulatory system' : 2502
+  4 - 'Diseases of the digestive system' : 2502
+  5 - 'Endocrine, nutritional and metabolic diseases' : 2502
+  6 - 'Neoplasms' : 2502
+  7 - 'Diseases of the respiratory system' : 2502
+  8 - 'External causes of mortality' : 2502
+  9 - 'Diseases of the musculoskeletal system and connective tissue' : 2496
+  10 - 'Symptoms, signs, ill-defined causes' : 2424
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 6 - method
+--------------------------------------------------------------------------------
+Different non-missing inputs: 2
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 41288
+
+10 most common non-missing inputs:
+  1 - 'Standardised rate' : 20644
+  2 - 'Crude rate' : 20644
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 7 - unit
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 41288
+
+10 most common non-missing inputs:
+  1 - 'Deaths per 100 000 inhabitants' : 41288
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 8 - value
+--------------------------------------------------------------------------------
+Different non-missing inputs: 3872
+Missing rows: 0
+Most appropriate datatype: Float
+
+Detected datatype counts:
+  Integer: 4067
+  Float: 37221
+  Boolean: 0
+  Text: 0
+
+10 most common non-missing inputs:
+  1 - '1.7' : 423
+  2 - '2' : 419
+  3 - '1.8' : 391
+  4 - '2.2' : 381
+  5 - '1.9' : 377
+  6 - '2.5' : 376
+  7 - '2.3' : 368
+  8 - '1.6' : 368
+  9 - '2.1' : 367
+  10 - '2.4' : 349
+
+Values that do not fit the chosen datatype:
+  None
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================

@@ -1,0 +1,940 @@
+================================================================================
+CSV BASIC ANALYSIS: 
+================================================================================
+
+Number of columns: 44
+Number of rows: 1524
+
+================================================================================
+COLUMNS IN ORDER
+================================================================================
+1 - STRUCTURE
+2 - STRUCTURE_ID
+3 - STRUCTURE_NAME
+4 - ACTION
+5 - REF_AREA
+6 - Reference area
+7 - FREQ
+8 - Frequency of observation
+9 - MEASURE
+10 - Measure
+11 - UNIT_MEASURE
+12 - Unit of measure
+13 - AGE
+14 - Age
+15 - SEX
+16 - Sex
+17 - SOCIO_ECON_STATUS
+18 - Socio-economic status
+19 - DEATH_CAUSE
+20 - Cause of death
+21 - CALC_METHODOLOGY
+22 - Calculation methodology
+23 - GESTATION_THRESHOLD
+24 - Gestation period threshold
+25 - HEALTH_STATUS
+26 - Health status
+27 - DISEASE
+28 - Disease
+29 - CANCER_SITE
+30 - Cancer site
+31 - TIME_PERIOD
+32 - Time period
+33 - OBS_VALUE
+34 - Observation value
+35 - DECIMALS
+36 - Decimals
+37 - OBS_STATUS
+38 - Observation status
+39 - OBS_STATUS2
+40 - Observation status 2
+41 - OBS_STATUS3
+42 - Observation status 3
+43 - UNIT_MULT
+44 - Unit multiplier
+
+================================================================================
+COLUMN ANALYSIS
+================================================================================
+
+--------------------------------------------------------------------------------
+Column 1 - STRUCTURE
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - 'DATAFLOW' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 2 - STRUCTURE_ID
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - 'OECD.ELS.HD:DSD_HEALTH_STAT@DF_HEALTH_STATUS(1.1)' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 3 - STRUCTURE_NAME
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - 'Health status' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 4 - ACTION
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - 'I' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 5 - REF_AREA
+--------------------------------------------------------------------------------
+Different non-missing inputs: 51
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - 'AUS' : 30
+  2 - 'AUT' : 30
+  3 - 'BEL' : 30
+  4 - 'CAN' : 30
+  5 - 'CHL' : 30
+  6 - 'COL' : 30
+  7 - 'CRI' : 30
+  8 - 'CZE' : 30
+  9 - 'DNK' : 30
+  10 - 'EST' : 30
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 6 - Reference area
+--------------------------------------------------------------------------------
+Different non-missing inputs: 51
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - 'Australia' : 30
+  2 - 'Austria' : 30
+  3 - 'Belgium' : 30
+  4 - 'Canada' : 30
+  5 - 'Chile' : 30
+  6 - 'Colombia' : 30
+  7 - 'Costa Rica' : 30
+  8 - 'Czechia' : 30
+  9 - 'Denmark' : 30
+  10 - 'Estonia' : 30
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 7 - FREQ
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - 'A' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 8 - Frequency of observation
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - 'Annual' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 9 - MEASURE
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - 'LFEXP' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 10 - Measure
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - 'Life expectancy' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 11 - UNIT_MEASURE
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - 'Y' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 12 - Unit of measure
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - 'Years' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 13 - AGE
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - 'Y0' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 14 - Age
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - '0 years' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 15 - SEX
+--------------------------------------------------------------------------------
+Different non-missing inputs: 3
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - 'M' : 508
+  2 - 'F' : 508
+  3 - '_T' : 508
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 16 - Sex
+--------------------------------------------------------------------------------
+Different non-missing inputs: 3
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - 'Male' : 508
+  2 - 'Female' : 508
+  3 - 'Total' : 508
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 17 - SOCIO_ECON_STATUS
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - '_Z' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 18 - Socio-economic status
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - 'Not applicable' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 19 - DEATH_CAUSE
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - '_Z' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 20 - Cause of death
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - 'Not applicable' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 21 - CALC_METHODOLOGY
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - '_Z' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 22 - Calculation methodology
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - 'Not applicable' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 23 - GESTATION_THRESHOLD
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - '_Z' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 24 - Gestation period threshold
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - 'Not applicable' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 25 - HEALTH_STATUS
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - '_Z' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 26 - Health status
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - 'Not applicable' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 27 - DISEASE
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - '_Z' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 28 - Disease
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - 'Not applicable' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 29 - CANCER_SITE
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - '_Z' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 30 - Cancer site
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - 'Not applicable' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 31 - TIME_PERIOD
+--------------------------------------------------------------------------------
+Different non-missing inputs: 10
+Missing rows: 0
+Most appropriate datatype: Integer
+
+Detected datatype counts:
+  Integer: 1524
+  Float: 0
+  Boolean: 0
+  Text: 0
+
+10 most common non-missing inputs:
+  1 - '2023' : 153
+  2 - '2022' : 153
+  3 - '2019' : 153
+  4 - '2018' : 153
+  5 - '2017' : 153
+  6 - '2016' : 153
+  7 - '2015' : 153
+  8 - '2021' : 153
+  9 - '2020' : 153
+  10 - '2024' : 147
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 32 - Time period
+--------------------------------------------------------------------------------
+Different non-missing inputs: 0
+Missing rows: 1524
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 0
+
+10 most common non-missing inputs:
+  No non-missing values
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 33 - OBS_VALUE
+--------------------------------------------------------------------------------
+Different non-missing inputs: 221
+Missing rows: 0
+Most appropriate datatype: Float
+
+Detected datatype counts:
+  Integer: 157
+  Float: 1367
+  Boolean: 0
+  Text: 0
+
+10 most common non-missing inputs:
+  1 - '81.1' : 24
+  2 - '81.4' : 24
+  3 - '81' : 22
+  4 - '80.9' : 21
+  5 - '81.6' : 21
+  6 - '79' : 20
+  7 - '80.6' : 19
+  8 - '81.3' : 18
+  9 - '83' : 18
+  10 - '82.4' : 18
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 34 - Observation value
+--------------------------------------------------------------------------------
+Different non-missing inputs: 0
+Missing rows: 1524
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 0
+
+10 most common non-missing inputs:
+  No non-missing values
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 35 - DECIMALS
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Integer
+
+Detected datatype counts:
+  Integer: 1524
+  Float: 0
+  Boolean: 0
+  Text: 0
+
+10 most common non-missing inputs:
+  1 - '1' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 36 - Decimals
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - 'One' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 37 - OBS_STATUS
+--------------------------------------------------------------------------------
+Different non-missing inputs: 2
+Missing rows: 1491
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 33
+
+10 most common non-missing inputs:
+  1 - 'E' : 30
+  2 - 'B' : 3
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 38 - Observation status
+--------------------------------------------------------------------------------
+Different non-missing inputs: 2
+Missing rows: 1491
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 33
+
+10 most common non-missing inputs:
+  1 - 'Estimated value' : 30
+  2 - 'Time series break' : 3
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 39 - OBS_STATUS2
+--------------------------------------------------------------------------------
+Different non-missing inputs: 0
+Missing rows: 1524
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 0
+
+10 most common non-missing inputs:
+  No non-missing values
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 40 - Observation status 2
+--------------------------------------------------------------------------------
+Different non-missing inputs: 0
+Missing rows: 1524
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 0
+
+10 most common non-missing inputs:
+  No non-missing values
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 41 - OBS_STATUS3
+--------------------------------------------------------------------------------
+Different non-missing inputs: 0
+Missing rows: 1524
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 0
+
+10 most common non-missing inputs:
+  No non-missing values
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 42 - Observation status 3
+--------------------------------------------------------------------------------
+Different non-missing inputs: 0
+Missing rows: 1524
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 0
+
+10 most common non-missing inputs:
+  No non-missing values
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 43 - UNIT_MULT
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Integer
+
+Detected datatype counts:
+  Integer: 1524
+  Float: 0
+  Boolean: 0
+  Text: 0
+
+10 most common non-missing inputs:
+  1 - '0' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+--------------------------------------------------------------------------------
+Column 44 - Unit multiplier
+--------------------------------------------------------------------------------
+Different non-missing inputs: 1
+Missing rows: 0
+Most appropriate datatype: Text
+
+Detected datatype counts:
+  Integer: 0
+  Float: 0
+  Boolean: 0
+  Text: 1524
+
+10 most common non-missing inputs:
+  1 - 'Units' : 1524
+
+Values that do not fit the chosen datatype:
+  None
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================
