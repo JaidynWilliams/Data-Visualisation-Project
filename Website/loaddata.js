@@ -38,3 +38,24 @@ export async function loadData() {
         methods
     };
 }
+
+export function filterData(
+    data,
+    {
+        country = null,
+        year = null,
+        measure = null,
+        sex = null,
+        method = null,
+        category = null
+    } = {}
+) {
+    return data.filter(d =>
+        (country === null || d.country === country) &&
+        (year === null || d.year === year) &&
+        (measure === null || d.measure === measure) &&
+        (sex === null || d.sex === sex) &&
+        (method === null || d.method === method) &&
+        (category === null || d.category === category)
+    );
+}
