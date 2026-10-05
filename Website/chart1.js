@@ -1,17 +1,28 @@
-export function drawPieChart(data) {
+import {
+    createTooltip,
+    showTooltip,
+    moveTooltip,
+    hideTooltip
+} from "./extras.js";
+
+export function drawPieChart(data, colours) {
 
     const width = 500;
     const height = 500;
     const radius = Math.min(width, height) / 2;
+    const total = d3.sum(data, d => d.value);
 
-    d3.select("#chart")
+    const tooltip = createTooltip();
+    d3.select("#chart-1")
         .selectAll("*")
         .remove();
 
-    const svg = d3.select("#chart")
+
+    const svg = d3.select("#chart-1")
         .append("svg")
         .attr("width", width)
         .attr("height", height);
+
 
     const chartGroup = svg.append("g")
         .attr(
@@ -19,43 +30,57 @@ export function drawPieChart(data) {
             `translate(${width / 2}, ${height / 2})`
         );
 
+
     const pie = d3.pie()
         .value(d => d.value);
+
 
     const arc = d3.arc()
         .innerRadius(0)
         .outerRadius(radius);
 
+
     const pieData = pie(data);
 
-    const colour = d3.scaleOrdinal()
-        .domain(data.map(d => d.category))
-        .range([
-            "#4e79a7",
-            "#f28e2b",
-            "#e15759",
-            "#76b7b2",
-            "#59a14f",
-            "#edc948",
-            "#b07aa1",
-            "#ff9da7",
-            "#9c755f",
-            "#bab0ab",
-            "#6b8e23",
-            "#8a2be2",
-            "#20b2aa",
-            "#ff7f50",
-            "#4682b4",
-            "#daa520",
-            "#cd5c5c",
-            "#708090",
-            "#2e8b57"
-        ]);
 
-    chartGroup.selectAll("path")
+    chartGroup
+        .selectAll("path")
         .data(pieData)
-        .enter()
-        .append("path")
+        .join("path")
         .attr("d", arc)
-        .attr("fill", d => colour(d.data.category));
+        .attr(
+            "fill",
+            d => colours(d.data.category)
+        )
+
+        .on("mouseover", function(event, d) {
+
+            d3.select(this)
+                .attr("opacity", 0.7);
+
+            showTooltip(
+                tooltip,
+                event,
+                    `
+                        <strong>${d.data.category}</strong><br>
+                        ${((d.data.value / total) * 100).toFixed(1)}%
+                    `
+            );
+        })
+
+        .on("mousemove", function(event) {
+
+            moveTooltip(
+                tooltip,
+                event
+            );
+        })
+
+        .on("mouseout", function() {
+
+            d3.select(this)
+                .attr("opacity", 1);
+
+            hideTooltip(tooltip);
+        });
 }

@@ -2,19 +2,39 @@ export async function loadData() {
 
     const rawData = await d3.csv(
         "../health_master_totals.csv",
-        d => ({
-            country: d.country,
-            year: +d.year,
-            sex: d.sex,
-            measure: d.measure,
-            category: d.category,
-            method: d.method,
-            unit: d.unit,
-            value: +d.value
-        })
-    );
+        d => {
 
-    const countries = [...new Set(rawData.map(d => d.country))].sort();
+            const valueText = d.value.trim();
+            const value = +valueText;
+
+            if (
+                valueText === "" ||
+                !Number.isFinite(value)
+            ) {
+                return null;
+            }
+
+            return {
+                country: d.country,
+                year: +d.year,
+                sex: d.sex,
+                measure: d.measure,
+                category: d.category,
+                method: d.method,
+                unit: d.unit,
+                value: value
+            };
+        }
+    );
+    //sets are used for creating menus
+    //excludes countries with no mortality data, China, etc, 
+    const countries =
+    [...new Set(
+        rawData
+            .filter(d => d.measure === "Mortality")
+            .map(d => d.country)
+    )]
+    .sort();
 
     const years = [...new Set(rawData.map(d => d.year))]
         .sort((a, b) => a - b);
@@ -27,18 +47,20 @@ export async function loadData() {
 
     const methods = [...new Set(rawData.map(d => d.method))];
 
-
     return {
         rawData,
-        countries,
-        years,
-        measures,
-        categories,
-        sexes,
-        methods
+
+        values: {
+            country: countries,
+            year: years,
+            sex: sexes,
+            method: methods,
+            category: categories,
+            measure: measures
+        }
     };
 }
-
+    //used for filtering data, thought it would be better it go in this instead of extras
 export function filterData(
     data,
     {

@@ -1,25 +1,66 @@
-export function setupChart1Menus(healthData) {
-    setupSelect("#country-select", healthData.countries);
-    setupSelect("#sex-select", healthData.sexes);
-    setupSelect(
-        "#method-select",
-        healthData.methods.filter(d => d !== "")
-    );
+export const chartMenus = {
 
-    setupYearSlider(healthData.years);
+    1: ["country", "sex", "method"],
+    2: ["country", "sex", "category"],
+    3: ["sex", "method"]
+
+};
+
+
+export function setupChartMenus(chartNumber, values) {
+
+    const controls = chartMenus[chartNumber];
+
+    controls.forEach(control => {
+
+        setupSelect(
+            `#chart-${chartNumber}-${control}-select`,
+            values[control]
+        );
+
+    });
+
+    setupYearSlider(
+        chartNumber,
+        values.year
+    );
 }
 
-export function getChart1Selections() {
-    return {
-        country: document.querySelector("#country-select").value,
-        year: +document.querySelector("#year-slider").value,
-        sex: document.querySelector("#sex-select").value,
-        method: document.querySelector("#method-select").value
-    };
+
+export function getChartSelections(chartNumber) {
+
+    const controls = chartMenus[chartNumber];
+
+    const selections = {};
+
+    controls.forEach(control => {
+
+        const select =
+            document.querySelector(
+                `#chart-${chartNumber}-${control}-select`
+            );
+
+        selections[control] =
+            select.value;
+
+    });
+
+
+    const slider =
+        document.querySelector(
+            `#chart-${chartNumber}-year-slider`
+        );
+
+    selections.year =
+        +slider.value;
+
+
+    return selections;
 }
 
 
 function setupSelect(selector, values) {
+
     d3.select(selector)
         .selectAll("option")
         .data(values)
@@ -29,19 +70,33 @@ function setupSelect(selector, values) {
 }
 
 
-function setupYearSlider(years) {
-    const slider = d3.select("#year-slider");
+function setupYearSlider(chartNumber, years) {
+
+    const slider =
+        d3.select(
+            `#chart-${chartNumber}-year-slider`
+        );
+
 
     slider
         .attr("min", d3.min(years))
         .attr("max", d3.max(years))
+        .attr("step", 1)
         .property("value", d3.max(years));
 
-    d3.select("#year-value")
+
+    d3.select(
+        `#chart-${chartNumber}-year-value`
+    )
         .text(d3.max(years));
 
+
     slider.on("input", function () {
-        d3.select("#year-value")
-            .text(this.value);
+
+        d3.select(
+            `#chart-${chartNumber}-year-value`
+        )
+        .text(this.value);
+
     });
 }

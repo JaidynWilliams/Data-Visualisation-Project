@@ -1,54 +1,106 @@
 import { loadData, filterData } from "./loaddata.js";
-import {setupChart1Menus, getChart1Selections} from "./menu.js";
+import { setupChartMenus, getChartSelections } from "./menu.js";
+import { setupChartEvents } from "./events.js";
+
+import { createCategoryColours } from "./colours.js";
 
 import { drawPieChart } from "./chart1.js";
+import { drawLineChart } from "./chart2.js";
+import { drawBarChart } from "./chart3.js";
 
-
-// 1. Load data
+//loads data from csv into sets & values
 const healthData = await loadData();
-
-
-// 2. Build the menus
-setupChart1Menus(healthData);
-
-
-// 3. Define what happens when the chart updates
-function updateChart1() {
-
-    const selections = getChart1Selections();
-
-    const filteredData = filterData(
-        healthData.rawData,
-        {
-            country: selections.country,
-            year: selections.year,
-            sex: selections.sex,
-            method: selections.method,
-            measure: "Mortality"
-        }
+//
+const categoryColours =
+    createCategoryColours(
+        healthData.values.category
     );
 
-    drawPieChart(filteredData);
+//sets up the menus with the sets
+setupChartMenus(1, healthData.values);
+setupChartMenus(2, healthData.values);
+setupChartMenus(3, healthData.values);
+
+
+function updateChart1() {
+
+    const selections =
+        getChartSelections(1);
+
+    let data =
+        filterData(
+            healthData.rawData,
+            {
+                country: selections.country,
+                year: selections.year,
+                sex: selections.sex,
+                method: selections.method,
+                measure: "Mortality"
+            }
+        );
+
+    data = data.filter(
+        d => d.category !== "Total"
+    );
+
+    drawPieChart(
+        data,
+        categoryColours
+    );
 }
 
 
-// 4. Connect controls to updateChart1
-document
-    .querySelector("#country-select")
-    .addEventListener("change", updateChart1);
+function updateChart2() {
 
-document
-    .querySelector("#sex-select")
-    .addEventListener("change", updateChart1);
+    const selections =
+        getChartSelections(2);
 
-document
-    .querySelector("#method-select")
-    .addEventListener("change", updateChart1);
+    const data =
+        filterData(
+            healthData.rawData,
+            {
+                country: selections.country,
+                sex: selections.sex,
+                category: selections.category,
+                measure: "Mortality"
+            }
+        );
 
-document
-    .querySelector("#year-slider")
-    .addEventListener("input", updateChart1);
+    drawLineChart(
+        data,
+        categoryColours
+    );
+}
 
 
-// 5. Draw the chart once when the page first loads
+function updateChart3() {
+
+    const selections =
+        getChartSelections(3);
+
+    const data =
+        filterData(
+            healthData.rawData,
+            {
+                year: selections.year,
+                sex: selections.sex,
+                method: selections.method,
+                measure: "Mortality"
+            }
+        );
+
+    drawBarChart(
+        data,
+        categoryColours
+    );
+}
+
+
+setupChartEvents(1, updateChart1);
+setupChartEvents(2, updateChart2);
+setupChartEvents(3, updateChart3);
+
+
 updateChart1();
+updateChart2();
+updateChart3();

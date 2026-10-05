@@ -20,38 +20,101 @@
         </header>
 
         <main class="visualisation-layout">
+    
+            <section class="chart-card">
 
+                <div id="chart-1"></div>
+
+                <div class="controls">
+
+                    <select id="chart-1-country-select"></select>
+                    <select id="chart-1-sex-select"></select>
+                    <select id="chart-1-method-select"></select>
+
+                    <input
+                        id="chart-1-year-slider"
+                        type="range"
+                    >
+
+                    <span id="chart-1-year-value"></span>
+
+                </div>
+
+            </section>
+            
             <section class="chart-section">
-                <div id="chart"></div>
+
+                <h2>Chart 2</h2>
+
+                <div id="chart-2"></div>
+
+                <div class="controls">
+
+                    <div class="control">
+                        <label for="chart-2-country-select">Country</label>
+                        <select id="chart-2-country-select"></select>
+                    </div>
+
+                    <div class="control">
+                        <label for="chart-2-sex-select">Sex</label>
+                        <select id="chart-2-sex-select"></select>
+                    </div>
+
+                    <div class="control">
+                        <label for="chart-2-category-select">Category</label>
+                        <select id="chart-2-category-select"></select>
+                    </div>
+
+                </div>
 
                 <div class="slider-container">
-                <input
-                    id="year-slider"
-                    type="range"
-                >
-                <span id="year-value"></span>
+
+                    <input
+                        id="chart-2-year-slider"
+                        type="range"
+                    >
+
+                    <span id="chart-2-year-value"></span>
+
                 </div>
+
             </section>
 
 
-            <aside class="controls">
+            <section class="chart-section">
 
-                <div class="control">
-                    <label for="country-select">Country</label>
-                    <select id="country-select"></select>
+                <h2>Chart 3</h2>
+
+                <div id="chart-3"></div>
+
+                <div class="controls">
+
+                    <div class="control">
+                        <label for="chart-3-sex-select">Sex</label>
+                        <select id="chart-3-sex-select"></select>
+                    </div>
+
+                    <div class="control">
+                        <label for="chart-3-method-select">Method</label>
+                        <select id="chart-3-method-select"></select>
+                    </div>
+
                 </div>
 
-                <div class="control">
-                    <label for="sex-select">Sex</label>
-                    <select id="sex-select"></select>
+                <div class="slider-container">
+
+                    <input
+                        id="chart-3-year-slider"
+                        type="range"
+                    >
+
+                    <span id="chart-3-year-value"></span>
+
                 </div>
 
-                <div class="control">
-                    <label for="method-select">Method</label>
-                    <select id="method-select"></select>
-                </div>
+            </section>
 
-            </aside>
+
 
         </main>
 
