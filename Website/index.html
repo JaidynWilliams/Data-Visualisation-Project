@@ -23,30 +23,37 @@
     
             <section class="chart-card">
 
-                <div id="chart-1"></div>
+                <h2>Chart 1</h2>
+                <div id="chart-1" class="chart"></div>
 
                 <div class="controls">
 
-                    <select id="chart-1-country-select"></select>
-                    <select id="chart-1-sex-select"></select>
-                    <select id="chart-1-method-select"></select>
-
-                    <input
-                        id="chart-1-year-slider"
-                        type="range"
-                    >
-
+                    <div class="control">
+                        <label for="chart-1-country-select">Country</label>
+                        <select id="chart-1-country-select"></select>
+                    </div>
+                    <div class="control">
+                        <label for="chart-1-sex-select">Sex</label>
+                        <select id="chart-1-sex-select"></select>
+                    </div>
+                    <div class="control">
+                        <label for="chart-1-method-select">Method</label>
+                        <select id="chart-1-method-select"></select>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <label for="chart-1-year-slider">Year</label>
+                    <input id="chart-1-year-slider" type="range">
                     <span id="chart-1-year-value"></span>
-
                 </div>
 
             </section>
             
-            <section class="chart-section">
+            <section class="chart-card">
 
                 <h2>Chart 2</h2>
 
-                <div id="chart-2"></div>
+                <div id="chart-2" class="chart"></div>
 
                 <div class="controls">
 
@@ -69,6 +76,7 @@
 
                 <div class="slider-container">
 
+                    <label for="chart-2-year-slider">Year</label>
                     <input
                         id="chart-2-year-slider"
                         type="range"
@@ -81,11 +89,11 @@
             </section>
 
 
-            <section class="chart-section">
+            <section class="chart-card">
 
                 <h2>Chart 3</h2>
 
-                <div id="chart-3"></div>
+                <div id="chart-3" class="chart"></div>
 
                 <div class="controls">
 
@@ -103,6 +111,7 @@
 
                 <div class="slider-container">
 
+                    <label for="chart-3-year-slider">Year</label>
                     <input
                         id="chart-3-year-slider"
                         type="range"
@@ -128,7 +137,7 @@
     </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script> <!-- ?-->
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <script type="module" src="./main.js"></script>
 
 </body>
