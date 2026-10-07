@@ -2,7 +2,9 @@ export const chartMenus = {
 
     1: ["country", "sex", "method"],
     2: ["country", "sex", "category"],
-    3: ["sex", "method"]
+    3: ["sex", "method"],
+    4: ["sex", "method"],
+    5: ["country", "sex", "method"]
 
 };
 
