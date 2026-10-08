@@ -9,6 +9,9 @@ import { drawLineChart } from "./chart2.js";
 import { drawBarChart } from "./chart3.js";
 import { drawStackedBarChart } from "./chart4.js";
 import { drawCountryMeasureBarChart } from "./chart5.js";
+//
+import { drawLineChart } from "./chart8.js";
+import { drawRankingChart } from "./chart9.js";
 
 
 //loads data from csv into sets & values
@@ -25,7 +28,9 @@ setupChartMenus(2, healthData.values);
 setupChartMenus(3, healthData.values);
 setupChartMenus(4, healthData.values);
 setupChartMenus(5, healthData.values);
-
+//
+setupChartMenus(8, healthData.values);
+setupChartMenus(9, healthData.values);
 
 //functions that do whatever the charts needs each update
 function updateChart1() {
