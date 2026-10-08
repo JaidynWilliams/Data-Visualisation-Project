@@ -4,8 +4,10 @@ export const chartMenus = {
     2: ["country", "sex", "category"],
     3: ["sex", "method"],
     4: ["sex", "method"],
-    5: ["country", "sex", "method"]
-
+    5: ["country", "sex", "method"],
+  // zac charts
+    8: ["country", "sex", "method", "measure"],
+    9: ["sex", "method", "measure"]
 };
 
 
