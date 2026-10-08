@@ -24,20 +24,7 @@ setupChartMenus(2, healthData.values);
 setupChartMenus(3, healthData.values);
 setupChartMenus(4, healthData.values);
 setupChartMenus(5, healthData.values);
-// 8 9 plus compare and highlight
-setupChartMenus(8, healthData.values);
-setupChartMenus(9, healthData.values);
-d3.select("#chart-8-compare-select")
-    .selectAll("option").data(["None", ...healthData.values.country]).join("option")
-    .attr("value", (d) => d).text((d) => d);
 
-d3.select("#chart-9-compare-select")
-    .selectAll("option").data(["None", ...healthData.values.country]).join("option")
-    .attr("value", (d) => d).text((d) => d);
-
-d3.select("#chart-9-country-select")
-    .selectAll("option").data(["None", ...healthData.values.country]).join("option")
-    .attr("value", (d) => d).text((d) => d);
 //functions that do whatever the charts needs each update
 function updateChart1() {
 
