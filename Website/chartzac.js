@@ -1,17 +1,17 @@
-//stuff for chart 4 & 6.
+//stuff for chart 2 & 6.
 //put this stuff here to keep tidy other files
 
 import { setupChartMenus, getChartSelections } from "./menu.js";
 import { setupChartEvents } from "./events.js";
 import { filterData } from "./loaddata.js";
-import { drawLineChart } from "./chart4.js";
+import { drawLineChart } from "./chart2.js";
 import { drawRankingChart } from "./chart6.js";
 
 export function initZacCharts(healthData) {
-    setupChartMenus(4, healthData.values);
+    setupChartMenus(2, healthData.values);
     setupChartMenus(6, healthData.values);
 
-    d3.select("#chart-4-compare-select")
+    d3.select("#chart-2-compare-select")
     .selectAll("option").data(["None", ...healthData.values.country]).join("option")
     .attr("value", (d) => d).text((d) => d);
 
@@ -23,13 +23,13 @@ export function initZacCharts(healthData) {
     .selectAll("option").data(["None", ...healthData.values.country]).join("option")
     .attr("value", (d) => d).text((d) => d);
 
-    function updateChart4() {
-        const selections = getChartSelections(4);
+    function updateChart2() {
+        const selections = getChartSelections(2);
 
-        d3.select("#chart-4-method-select").property("disabled", selections.measure !== "Mortality");
+        d3.select("#chart-2-method-select").property("disabled", selections.measure !== "Mortality");
         const method = selections.measure === "Mortality" ? selections.method : null;
 
-        const compareCountry = d3.select("#chart-4-compare-select").property("value");
+        const compareCountry = d3.select("#chart-2-compare-select").property("value");
 
         const seriesFor = (country) => ({
             label: country,
@@ -66,12 +66,12 @@ export function initZacCharts(healthData) {
         });
     }
 
-    setupChartEvents(4, updateChart4);
-    d3.select("#chart-4-compare-select").on("change", updateChart4);
+    setupChartEvents(2, updateChart2);
+    d3.select("#chart-2-compare-select").on("change", updateChart2);
     setupChartEvents(6, updateChart6);
     d3.select("#chart-6-compare-select").on("change", updateChart6);
     d3.select("#chart-6-country-select").on("change", updateChart6);
 
-    updateChart4();
+    updateChart2();
     updateChart6();
 }
