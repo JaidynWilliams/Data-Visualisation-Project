@@ -7,9 +7,10 @@ import { createCategoryColours } from "./colours.js";
 import { drawPieChart } from "./chart1.js";
 import { drawLineChart } from "./chart2.js";
 import { drawBarChart } from "./chart3.js";
+import { drawStackedBarChart } from "./chart4.js";
 import { drawCountryMeasureBarChart } from "./chart5.js";
 
-import { initZacCharts } from "./chartzac.js";
+import { initZacCharts } from "./chart89-init.js";
 
 //loads data from csv into sets & values
 const healthData = await loadData();
@@ -23,6 +24,7 @@ const categoryColours =
 setupChartMenus(1, healthData.values);
 setupChartMenus(2, healthData.values);
 setupChartMenus(3, healthData.values);
+setupChartMenus(4, healthData.values);
 setupChartMenus(5, healthData.values);
 
 //functions that do whatever the charts needs each update
@@ -141,6 +143,7 @@ function updateChart5() {
 setupChartEvents(1, updateChart1);
 setupChartEvents(2, updateChart2);
 setupChartEvents(3, updateChart3);
+setupChartEvents(4, updateChart4);
 setupChartEvents(5, updateChart5);
 
 

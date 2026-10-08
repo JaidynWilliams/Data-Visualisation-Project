@@ -13,8 +13,8 @@ export function drawLineChart({ main, compare }, markerYear, yearExtent) {
 
 
 
-    d3.select("#chart-4").selectAll("*").remove();
-    const svg = d3.select("#chart-4").append("svg").attr("width", width).attr("height", height);
+    d3.select("#chart-2").selectAll("*").remove();
+    const svg = d3.select("#chart-2").append("svg").attr("width", width).attr("height", height);
     const plot = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
 
     const series = [{ ...main, role: "main" }, ...(compare ? [{ ...compare, role: "compare" }] : [])];
