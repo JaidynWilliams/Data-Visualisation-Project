@@ -9,10 +9,6 @@ import { drawLineChart } from "./chart2.js";
 import { drawBarChart } from "./chart3.js";
 import { drawStackedBarChart } from "./chart4.js";
 import { drawCountryMeasureBarChart } from "./chart5.js";
-//
-import { drawLineChart } from "./chart8.js";
-import { drawRankingChart } from "./chart9.js";
-
 
 //loads data from csv into sets & values
 const healthData = await loadData();
