@@ -5,7 +5,6 @@ import { setupChartEvents } from "./events.js";
 import { createCategoryColours } from "./colours.js";
 
 import { drawPieChart } from "./chart1.js";
-import { drawLineChart } from "./chart2.js";
 import { drawBarChart } from "./chart3.js";
 import { drawStackedBarChart } from "./chart4.js";
 import { drawCountryMeasureBarChart } from "./chart5.js";
