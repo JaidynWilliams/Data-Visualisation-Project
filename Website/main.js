@@ -10,6 +10,8 @@ import { drawBarChart } from "./chart3.js";
 import { drawStackedBarChart } from "./chart4.js";
 import { drawCountryMeasureBarChart } from "./chart5.js";
 
+import { initZacCharts } from "./chart89-init.js";
+
 //loads data from csv into sets & values
 const healthData = await loadData();
 //
@@ -151,3 +153,5 @@ updateChart2();
 updateChart3();
 updateChart4();
 updateChart5();
+
+initZacCharts(healthData);
