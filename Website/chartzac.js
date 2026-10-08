@@ -67,10 +67,10 @@ export function initZacCharts(healthData) {
     }
 
     setupChartEvents(4, updateChart8);
-    d3.select("#chart-4-compare-select").on("change", updateChart8);
+    d3.select("#chart-4-compare-select").on("change", updateChart4);
     setupChartEvents(6, updateChart9);
-    d3.select("#chart-6-compare-select").on("change", updateChart9);
-    d3.select("#chart-6-country-select").on("change", updateChart9);
+    d3.select("#chart-6-compare-select").on("change", updateChart6);
+    d3.select("#chart-6-country-select").on("change", updateChart6);
 
     updateChart4();
     updateChart6();
