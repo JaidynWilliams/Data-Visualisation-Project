@@ -12,7 +12,7 @@ export function drawRankingChart(rows, { country, compare, year, higherIsBetter 
     const innerW = width - margin.left - margin.right;
     const BAND = 20;
 
-    const container = d3.select("#chart-9");
+    const container = d3.select("#chart-6");
     container.selectAll("*").remove();
 
 
