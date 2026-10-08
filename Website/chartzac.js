@@ -23,13 +23,13 @@ export function initZacCharts(healthData) {
     .selectAll("option").data(["None", ...healthData.values.country]).join("option")
     .attr("value", (d) => d).text((d) => d);
 
-    function updateChart8() {
-        const selections = getChartSelections(8);
+    function updateChart4() {
+        const selections = getChartSelections(4);
 
-        d3.select("#chart-8-method-select").property("disabled", selections.measure !== "Mortality");
+        d3.select("#chart-4-method-select").property("disabled", selections.measure !== "Mortality");
         const method = selections.measure === "Mortality" ? selections.method : null;
 
-        const compareCountry = d3.select("#chart-8-compare-select").property("value");
+        const compareCountry = d3.select("#chart-4-compare-select").property("value");
 
         const seriesFor = (country) => ({
             label: country,
@@ -66,9 +66,9 @@ export function initZacCharts(healthData) {
         });
     }
 
-    setupChartEvents(4, updateChart8);
+    setupChartEvents(4, updateChart4);
     d3.select("#chart-4-compare-select").on("change", updateChart4);
-    setupChartEvents(6, updateChart9);
+    setupChartEvents(6, updateChart6);
     d3.select("#chart-6-compare-select").on("change", updateChart6);
     d3.select("#chart-6-country-select").on("change", updateChart6);
 
